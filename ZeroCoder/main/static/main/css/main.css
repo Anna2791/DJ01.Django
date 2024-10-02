@@ -1,0 +1,37 @@
+body {
+    background-color: #e0f7e9; /* Светло-зеленый фон */
+    font-family: 'UnifrakturCook', serif;
+}
+
+aside {
+    background-color: #c8e6c9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.magical-forest {
+    background: url('../img/forest.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 70px 0;
+    color: #fff;
+    text-align: center;
+}
+h1 {
+  text-align: center;
+}
+
+.news-title {
+    font-size: 2.5rem; /* Увеличиваем размер шрифта */
+    color: #2e7d32;
+    font-family: 'UnifrakturCook', serif
+}
+footer {
+    background-color: #c8e6c9; /* Цвет фона футера, совпадает с `aside` */
+    padding: 5px;
+    text-align: center;
+    color: #2e7d32; /* Цвет текста */
+    border-top: 1px solid #a5d6a7; /* Линия сверху */
+    font-family: 'UnifrakturCook', serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

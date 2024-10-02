@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <title>{% block title %}Волшебный Лес{% endblock %}</title>
+</head>
+<body>
+    <main>
+        <section class="magical-forest">
+            <div class="container">
+                <h1 class="display-4">Добро пожаловать в Волшебный Лес</h1>
+                <p class="lead">Исследуйте магию и чудеса природы, окунитесь в атмосферу сказки.</p>
+            </div>
+        </section>
+
+        <aside class="container my-4 d-flex align-items-center">
+    <img src="{% static 'main/img/hog.png' %}" alt="замок" width="200px" class="img-fluid mb-3 mr-3">
+    <div>
+        <h2 class="news-title">Новости волшебного мира</h2>
+<p>
+    <a href="{% url 'page2' %}">
+        Здесь будут последние новости из волшебного мира, которые перенесут вас в сказочную атмосферу.
+    </a>
+</p>
+        <nav>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="{% url 'home' %}">Главная</a></li>
+                <li class="list-inline-item"><a href="{% url 'page2' %}">Новости от Ника</a></li>
+                <li class="list-inline-item"><a href="{% url 'page3' %}">О зверях</a></li>
+                <li class="list-inline-item"><a href="{% url 'page4' %}">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+        <section class="container my-5">
+            {% block content %}
+            {% endblock %}
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,15 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+def contact(request):
+    return render(request, 'main/contact.html')
 
-def datatext(request):
-    return HttpResponse("<h1>Это мой первый проект на Django!УРА</h1>")
-
-
-def testtext(request):
-    return HttpResponse("<h1>Это вторая страница на Django!</h1>")
-
+def beast(request):
+    return render(request, 'main/beast.html')
 
 def index(request):
-    return HttpResponse("<h1>Это главная страница на Django!</h1>")
-
+    return render(request, 'main/index.html')
+def new(request):
+    return render(request, 'main/new.html')
