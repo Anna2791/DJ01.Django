@@ -23,16 +23,17 @@
     <div>
         <h2 class="news-title">Новости волшебного мира</h2>
 <p>
-    <a href="{% url 'page2' %}">
+    <a href="{% url 'news_home' %}">
         Здесь будут последние новости из волшебного мира, которые перенесут вас в сказочную атмосферу.
     </a>
 </p>
         <nav>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="{% url 'home' %}">Главная</a></li>
-                <li class="list-inline-item"><a href="{% url 'page2' %}">Новости от Ника</a></li>
+                <li class="list-inline-item"><a href="{% url 'page2' %}">Сплетни от Ника</a></li>
                 <li class="list-inline-item"><a href="{% url 'page3' %}">О зверях</a></li>
                 <li class="list-inline-item"><a href="{% url 'page4' %}">Контакты</a></li>
+                <li class="list-inline-item"><a href="{% url 'news_home' %}">Новостная страница</a>
             </ul>
         </nav>
     </div>
